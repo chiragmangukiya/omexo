@@ -1,0 +1,143 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik&display=swap'); */
+
+/* rajdhani-300 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/rajdhani-v15-latin-300.woff2') format('woff2'); 
+}
+/* rajdhani-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/rajdhani-v15-latin-regular.woff2') format('woff2');
+}
+/* rajdhani-500 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/rajdhani-v15-latin-500.woff2') format('woff2'); 
+}
+/* rajdhani-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/rajdhani-v15-latin-600.woff2') format('woff2'); 
+}
+/* rajdhani-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/rajdhani-v15-latin-700.woff2') format('woff2'); 
+}
+
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/rubik-v26-latin-regular.woff2') format('woff2'); 
+}
+
+:root{
+  --themeBlue:#0E0937;
+  --themeOrange:#FF630D;
+  --txtBody:#130f40;
+  --fontRubik:'Rubik', sans-serif;
+}
+body{
+  font-family: 'Rajdhani', sans-serif !important;
+  color: var(--txtBody);
+}
+a{
+  text-decoration: none !important;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+.spacer{
+  padding: 90px 0;
+}
+.bgBlue{
+  background-color: var(--themeBlue);
+  color: #fff;
+}
+.btn-theme{
+  background-color: var(--themeOrange);
+  font-family: var(--fontRubik);
+  padding: 10px;
+}
+.btn-theme a{
+  color: white;
+  padding: 0 10px;
+}
+.btn-theme a:first-child{
+  border-right: 1px white solid;
+
+}
+.btn-theme a:hover{
+  text-decoration: underline !important;
+}
+.btn-theme:hover{
+  background-color: var(--themeOrange);
+}
+
+/* ==================================================
+                      Header
+=====================================================*/
+
+/* Top Header */
+.search_box{
+  padding: 10px 35px 10px 10px;
+  width: 250px;
+  border: none;
+  background-color: #28214C;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+}
+.contact_info{
+  font-family: var(--fontRubik);
+}
+.search_icon{
+  right: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.contact_info .social_icon a{
+  color: white;
+  margin: 0 7px;
+}
+.contact_info .social_icon a:hover{
+  color: var(--themeOrange);
+}
+
+/* logo header */
+.main_logo img{
+  width: 175px;
+}
+.main_menu li a{
+  padding: 25px 20px !important;
+  font-weight: 700;
+  font-size: 19px;
+}
+.main_menu li a.active,
+.main_menu li:hover a{
+  color: var(--themeOrange) !important;  
+}
