@@ -1,0 +1,35 @@
+@media screen and (max-width:992px) {
+
+     header{
+          border-bottom: 1px #ccc solid;
+     }
+     .mob_menu{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          z-index: 100;
+          background-color: #fff;
+     }
+     .navbar-toggler{
+          border: none;
+          outline: none;
+          box-shadow: none !important;
+          padding: 25px 0;
+     }
+     .main_menu li a{
+          padding: 10px !important;
+     }
+     .sub_menu{
+          position: static;
+          display: none;
+          width: 100%;
+     }
+     .main_menu li:hover .sub_menu{
+          display: block;
+          opacity: 1;
+          visibility: visible;
+     }
+     
+}

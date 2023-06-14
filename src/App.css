@@ -132,12 +132,67 @@ h1,h2,h3,h4,h5,h6,p{
 .main_logo img{
   width: 175px;
 }
+.main_menu li{
+  position: relative;
+}
 .main_menu li a{
+  display: block;
   padding: 25px 20px !important;
   font-weight: 700;
   font-size: 19px;
+  color: var(--txtBody);
 }
 .main_menu li a.active,
-.main_menu li:hover a{
+.main_menu li:hover > a{
   color: var(--themeOrange) !important;  
+}
+
+.sub_menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  border-radius: 5px;
+  border-top: 2px var(--themeOrange) solid;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 10;
+}
+.sub_menu li a{
+  padding: 13px !important;
+  font-size: 17px;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid; 
+}
+.main_menu li:hover .sub_menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Banner */
+
+.banner{
+  background-image: linear-gradient(rgba(5, 1, 51, 0.7),rgba(5, 1, 51, 0.7)),url('./assets/image/banner_bg.jpeg');
+  background-size: cover;
+  height: calc(100vh - 155px);
+}
+#banner,
+#banner .owl-stage-outer,
+#banner .owl-stage,
+#banner .owl-item{
+  height: inherit;
+}
+
+#banner .item{
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner .slider_content{
+  color: #fff;
+  text-align: center;
+  
 }

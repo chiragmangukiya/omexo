@@ -37,52 +37,69 @@ const Header = () => {
                </div>
 
                {/* Logo Header */}
-               <div className="container">
-                    <nav className="navbar navbar-expand-lg py-0">
-                         <div className="container-fluid px-0 align-items-center">
-                              <a className="navbar-brand main_logo" href="#">
-                                   <img src={require('../assets/image/logo_dark.png')}></img>
-                              </a>
-                              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                   <span className="navbar-toggler-icon" />
-                              </button>
-                              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0 main_menu">
-                                        <li className="nav-item">
-                                             <a className="nav-link active" aria-current="page" href="#">Home</a>
-                                        </li>
-                                        <li className="nav-item">
-                                             <a className="nav-link" href="#">Pages</a>
-                                        </li>
-                                        <li className="nav-item dropdown">
-                                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                             Courses
-                                             </a>
-                                             <ul className="dropdown-menu">
-                                                  <li><a className="dropdown-item" href="#">Action</a></li>
-                                                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                                                  <li><hr className="dropdown-divider" /></li>
-                                                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                             </ul>
-                                        </li>
-                                        <li className="nav-item">
-                                             <a className="nav-link">Webinars</a>
-                                        </li>
-                                        <li className="nav-item">
-                                             <a className="nav-link">Blog</a>
-                                        </li>
-                                        <li className="nav-item">
-                                             <a className="nav-link">Contact</a>
-                                        </li>
-                                   </ul>
-                                   <div className='btn btn-theme ms-5'>
-                                        <a href="">Login</a>
-                                        <a href="">Register</a>
+               <div className="position-relative">
+                    <div className="container">
+                         <nav className="navbar navbar-expand-lg py-0">
+                              <div className="container-fluid px-0 align-items-center">
+                                   <a className="navbar-brand main_logo order-1 order-lg-1" href="#">
+                                        <img src={require('../assets/image/logo_dark.png')}></img>
+                                   </a>
+                                   <button className="navbar-toggler order-3 order-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span className="navbar-toggler-icon" />
+                                   </button>
+                                   <div className="collapse navbar-collapse mob_menu order-2" id="navbarSupportedContent">
+                                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 main_menu">
+                                             <li className="nav-item">
+                                                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                             </li>
+                                             <li className="nav-item">
+                                                  <a className="nav-link dropdown-toggle" href="#">Pages</a>
+                                                  <ul className="sub_menu">
+                                                       <li><a href="#">About Us</a></li>
+                                                       <li><a href="#">Membership Plans</a></li>
+                                                       <li><a href="#">Instructors</a></li>
+                                                       <li><a href="#">FAQs</a></li>
+                                                  </ul>
+                                             </li>
+                                             <li className="nav-item ">
+                                                  <a className="nav-link dropdown-toggle" href="#">
+                                                  Courses
+                                                  </a>
+                                                  <ul class="sub_menu">
+                                                       <li><a href="#">Courses</a></li>
+                                                       <li><a href="#">Course Single</a></li>
+                                                       <li><a href="#">Become An Instructor</a></li>
+                                                       <li><a href="#">Instructor Profile</a></li>
+                                                       <li><a href="#">Student Registration</a></li>
+                                                       <li><a href="#">Instructor Registration</a></li>
+                                                  </ul>
+                                             </li>
+                                             <li className="nav-item">
+                                                  <a href="#" className="nav-link dropdown-toggle">Webinars</a>
+                                                  <ul class="sub_menu">
+                                                       <li><a href="#">Upcoming Webinars</a></li>
+                                                       <li><a href="#">Webinar Single</a></li>
+                                                  </ul>
+                                             </li>
+                                             <li className="nav-item">
+                                                  <a href="#" className="nav-link dropdown-toggle">Blog</a>
+                                                  <ul class="sub_menu">
+                                                       <li><a href="#">Blog Page</a></li>
+                                                       <li><a href="#">Blog Single</a></li>
+                                                  </ul>
+                                             </li>
+                                             <li className="nav-item">
+                                                  <a href="#" className="nav-link">Contact</a>
+                                             </li>
+                                        </ul>                                   
+                                   </div>
+                                   <div className='btn btn-theme ms-5 d-none d-md-block order-2 order-lg-3'>
+                                        <a href="#">Login</a>
+                                        <a href="#">Register</a>
                                    </div>
                               </div>
-                         </div>
-                    </nav>
-
+                         </nav>
+                    </div>
                </div>
 
           </header>

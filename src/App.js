@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
+import './assets/css/responsive.css'
 import Header from './Comp/Header';
+import Banner from './Comp/Banner';
 
 
 
@@ -10,6 +13,7 @@ function App() {
   return (
     <>
         <Header />
+        <Banner />
     </>
   );
 }
